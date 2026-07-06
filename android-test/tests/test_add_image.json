@@ -1,0 +1,47 @@
+{
+  "name": "添加任务页面点击添加图片",
+  "package": "com.wy.todaythings",
+  "auto_launch": true,
+  "continue_on_fail": false,
+  "steps": [
+    {
+      "action": "screenshot",
+      "name": "01_home"
+    },
+    {
+      "action": "tap",
+      "selector": "添加任务",
+      "by": "description"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "02_add_task_page"
+    },
+    {
+      "action": "log",
+      "message": "查找'添加图片'按钮"
+    },
+    {
+      "action": "tap",
+      "selector": "添加图片",
+      "by": "textContains"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "03_image_picker"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "拍照",
+      "by": "textContains"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "未完成任务提醒栏→详情→编辑→保存不可点",
+  "package": "com.wy.todaythings",
+  "auto_launch": true,
+  "continue_on_fail": false,
+  "steps": [
+    {
+      "action": "screenshot",
+      "name": "01_home"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "一周内还有",
+      "by": "textContains"
+    },
+    {
+      "action": "tap",
+      "selector": "一周内还有",
+      "by": "textContains"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "02_overdue_sheet"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "未完成任务",
+      "by": "text"
+    },
+    {
+      "action": "tap",
+      "selector": "天前",
+      "by": "textContains"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "03_task_detail"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "查看任务",
+      "by": "text"
+    },
+    {
+      "action": "tap",
+      "selector": "编辑任务",
+      "by": "description"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "04_edit_task"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "编辑任务",
+      "by": "text"
+    },
+    {
+      "action": "assert_not_clickable",
+      "selector": "保存",
+      "by": "text"
+    }
+  ]
+}

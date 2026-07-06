@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>未完成任务提醒栏→详情→编辑→保存不可点</title>
+<style>
+body{font-family:Arial;margin:20px}
+.summary{background:#f5f5f5;padding:15px;border-radius:8px;margin-bottom:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:8px;text-align:left}
+th{background:#4CAF50;color:white}
+</style></head>
+<body>
+<h1>测试报告: 未完成任务提醒栏→详情→编辑→保存不可点</h1>
+<div class="summary">
+    <p>开始: 2026-07-06 15:25:37</p>
+    <p>结束: 2026-07-06 15:25:55</p>
+    <p>耗时: 18.4s</p>
+    <p>通过: <b style="color:green">15</b> / 失败: <b style="color:red">0</b> / 总计: 15</p>
+</div>
+<table>
+<tr><th>#</th><th>动作</th><th>参数</th><th>状态</th><th>耗时</th><th>截图/错误</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>screenshot</td>
+                <td>{"name": "01_home"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>201ms</td>
+                <td><a href="01_home.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>assert_exists</td>
+                <td>{"selector": "一周内还有", "by": "textContains"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>375ms</td>
+                <td><a href="step_02_assert_ok.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>tap</td>
+                <td>{"selector": "一周内还有", "by": "textContains"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1852ms</td>
+                <td><a href="step_03_after_tap.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>wait</td>
+                <td>{"ms": 2000}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1999ms</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>screenshot</td>
+                <td>{"name": "02_overdue_sheet"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>242ms</td>
+                <td><a href="02_overdue_sheet.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>assert_exists</td>
+                <td>{"selector": "未完成任务", "by": "text"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>400ms</td>
+                <td><a href="step_06_assert_ok.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>tap</td>
+                <td>{"selector": "天前", "by": "textContains"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1902ms</td>
+                <td><a href="step_07_after_tap.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>wait</td>
+                <td>{"ms": 2000}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1999ms</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>screenshot</td>
+                <td>{"name": "03_task_detail"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>247ms</td>
+                <td><a href="03_task_detail.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>assert_exists</td>
+                <td>{"selector": "查看任务", "by": "text"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>388ms</td>
+                <td><a href="step_10_assert_ok.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>tap</td>
+                <td>{"selector": "编辑任务", "by": "description"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>2028ms</td>
+                <td><a href="step_11_after_tap.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>wait</td>
+                <td>{"ms": 2000}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>2000ms</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>screenshot</td>
+                <td>{"name": "04_edit_task"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>252ms</td>
+                <td><a href="04_edit_task.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>assert_exists</td>
+                <td>{"selector": "编辑任务", "by": "text"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>476ms</td>
+                <td><a href="step_14_assert_ok.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>assert_not_clickable</td>
+                <td>{"selector": "保存", "by": "text"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>924ms</td>
+                <td><a href="step_15_assert_not_clickable.png">截图</a></td>
+            </tr>
+            
+</table>
+</body></html>

@@ -1,0 +1,51 @@
+{
+  "name": "添加任务完整流程",
+  "package": "com.wy.todaythings",
+  "auto_launch": true,
+  "continue_on_fail": false,
+  "steps": [
+    {
+      "action": "screenshot",
+      "name": "01_home"
+    },
+    {
+      "action": "tap",
+      "selector": "添加任务",
+      "by": "description"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "input",
+      "text": "买菜"
+    },
+    {
+      "action": "wait",
+      "ms": 500
+    },
+    {
+      "action": "screenshot",
+      "name": "02_filled"
+    },
+    {
+      "action": "tap",
+      "selector": "保存",
+      "by": "textContains"
+    },
+    {
+      "action": "wait",
+      "ms": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "03_after_save"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "买菜",
+      "by": "text"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "添加任务流程",
+  "package": "com.wy.todaythings",
+  "auto_launch": true,
+  "continue_on_fail": false,
+  "steps": [
+    {
+      "action": "screenshot",
+      "name": "01_home"
+    },
+    {
+      "action": "tap",
+      "selector": "添加任务",
+      "by": "description",
+      "wait": 2000
+    },
+    {
+      "action": "screenshot",
+      "name": "02_add_task_page"
+    },
+    {
+      "action": "assert_exists",
+      "selector": "android.widget.EditText",
+      "by": "className"
+    }
+  ]
+}

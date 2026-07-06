@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>切换配色方案为雅绿（点单选框）</title>
+<style>
+body{font-family:Arial;margin:20px}
+.summary{background:#f5f5f5;padding:15px;border-radius:8px;margin-bottom:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:8px;text-align:left}
+th{background:#4CAF50;color:white}
+</style></head>
+<body>
+<h1>测试报告: 切换配色方案为雅绿（点单选框）</h1>
+<div class="summary">
+    <p>开始: 2026-07-06 14:48:25</p>
+    <p>结束: 2026-07-06 14:48:36</p>
+    <p>耗时: 10.7s</p>
+    <p>通过: <b style="color:green">7</b> / 失败: <b style="color:red">0</b> / 总计: 7</p>
+</div>
+<table>
+<tr><th>#</th><th>动作</th><th>参数</th><th>状态</th><th>耗时</th><th>截图/错误</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>screenshot</td>
+                <td>{"name": "01_home_purple"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>211ms</td>
+                <td><a href="01_home_purple.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>tap</td>
+                <td>{"selector": "设置", "by": "description"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>2132ms</td>
+                <td><a href="step_02_after_tap.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>wait</td>
+                <td>{"ms": 2000}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>2000ms</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>screenshot</td>
+                <td>{"name": "02_settings_purple"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>230ms</td>
+                <td><a href="02_settings_purple.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>tap</td>
+                <td>{"x": 72, "y": 810, "by": "coordinate"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1594ms</td>
+                <td><a href="step_05_after_tap.png">截图</a></td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>wait</td>
+                <td>{"ms": 1500}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>1500ms</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>screenshot</td>
+                <td>{"name": "03_after_green"}</td>
+                <td style="color:green;font-weight:bold">PASS</td>
+                <td>235ms</td>
+                <td><a href="03_after_green.png">截图</a></td>
+            </tr>
+            
+</table>
+</body></html>
