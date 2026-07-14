@@ -25,11 +25,13 @@ read_when:
 
 ## 配置文件位置
 
-- SKILL: `C:\Users\Pigwen\.workbuddy\skills\android-ui-test-worker\`
+- SKILL: `android-ui-test-worker/`
 - 测试用例: `tests/*.json`
 - 执行器: `runner.py`
 - 输出: `test_output/YYYYMMDD_HHMMSS/`
 - 备份 v1: `android-ui-test-worker.v1.bak/`（单用例硬编码版）
+
+> 以上路径均相对于 skill 根目录（`android-ui-test-worker/`）。
 
 ## 权限前置条件
 
@@ -41,8 +43,8 @@ read_when:
 ## 快速开始
 
 ```bash
-# 跑现成用例
-cd C:/Users/Pigwen/.workbuddy/skills/android-ui-test-worker
+# 跑现成用例（在 skill 根目录下执行）
+cd android-ui-test-worker
 python -u runner.py --test tests/test_add_image.json
 
 # 指定设备（多设备时）
