@@ -10,7 +10,7 @@ if [ -z "$TEXT" ]; then
     exit 1
 fi
 
-XML_FILE="C:/Users/Pigwen/.workbuddy/skills/android-test/scripts/test_output/ui.xml"
+XML_FILE="C:/Users/Pigwen/.workbuddy/skills/android-ui-test-worker/scripts/test_output/ui.xml"
 adb shell uiautomator dump --compressed /sdcard/ui.xml 2>/dev/null
 adb pull /sdcard/ui.xml "$XML_FILE" 2>/dev/null
 

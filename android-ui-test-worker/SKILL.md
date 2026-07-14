@@ -1,5 +1,5 @@
 ---
-name: android-test
+name: android-ui-test-worker
 description: Android 设备自动化测试，基于 JSON 用例 + uiautomator2 执行器。支持自然语言驱动的测试场景，自动生成 HTML 报告与截图证据。已验证兼容 MIUI 13 (Android 13, SDK 33)。
 read_when:
   - Android 自动化测试
@@ -9,7 +9,7 @@ read_when:
   - "跑一下测试"/"测试这个功能"
 ---
 
-# Android Test Skill v2
+# Android UI Test Worker
 
 通过 **JSON 用例 + uiautomator2 执行器** 实现 Android 设备自动化测试。
 
@@ -25,11 +25,11 @@ read_when:
 
 ## 配置文件位置
 
-- SKILL: `C:\Users\Pigwen\.workbuddy\skills\android-test\`
+- SKILL: `C:\Users\Pigwen\.workbuddy\skills\android-ui-test-worker\`
 - 测试用例: `tests/*.json`
 - 执行器: `runner.py`
 - 输出: `test_output/YYYYMMDD_HHMMSS/`
-- 备份 v1: `android-test.v1.bak/`（单用例硬编码版）
+- 备份 v1: `android-ui-test-worker.v1.bak/`（单用例硬编码版）
 
 ## 权限前置条件
 
@@ -42,7 +42,7 @@ read_when:
 
 ```bash
 # 跑现成用例
-cd C:/Users/Pigwen/.workbuddy/skills/android-test
+cd C:/Users/Pigwen/.workbuddy/skills/android-ui-test-worker
 python -u runner.py --test tests/test_add_image.json
 
 # 指定设备（多设备时）
