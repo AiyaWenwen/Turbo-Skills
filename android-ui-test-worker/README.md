@@ -29,11 +29,10 @@
 
 4. 测试过程归档，自动生成可视化report；
 
-   ![image-20260714120524279](C:\Users\Pigwen\AppData\Roaming\Typora\typora-user-images\image-20260714120524279.png)
+   <img width="2552" height="1274" alt="image" src="https://github.com/user-attachments/assets/dd368eea-74da-4413-8de0-8c01ba476dcf" />
+
 
 5. 生成Task可复用，减少用例冗余。
-
-![image-20260714120608467](C:\Users\Pigwen\AppData\Roaming\Typora\typora-user-images\image-20260714120608467.png)
 
 **使用姿势：**
 
